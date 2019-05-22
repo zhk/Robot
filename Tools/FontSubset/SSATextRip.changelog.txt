@@ -1,0 +1,6 @@
+﻿1.0.2
+	When there are characters which is unable to be encoded in the console encoding, UTF-8 will be used
+1.0.1
+	Fixed a typo
+1.0.0
+	Initial Release

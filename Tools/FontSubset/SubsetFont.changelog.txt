@@ -1,0 +1,24 @@
+1.1.3
+	Improvement: UTF-8 with BOM from STDIN is supported
+	Improvement: TTC file is now supported, use -ttcindex or -ti to specify font index
+1.1.2
+	Improvement: x64 OSes is supported now (thanks squallatf!)
+	Improvement: SubsetFont.PInvoke.dll is no longer needed (thanks squallatf again!)
+	Improvement: Charactor checking process won't create any temporary file
+1.1.1 
+	Bug fix: Now font checksum is corrected after name randomization
+1.1.0
+	New feature: Randomize font name
+				If the embedded font is not unloadded correctly(program crashed, killed in task manager, etc.), it will stay in memory. Windows will not load font with that name anymore, instead it will just use the one in the memory. You can fix this problem only by re-log. 
+				This new feature can be used to solve this problem. Name of the new font is randomized, so different subset of a same font will not confuse system.
+				Usage: Add -randomize or -r to command line. The original and new name will be written into standard output.
+	New feature: Preview characters
+				Shows a window displaying all characters in the character list, using the generated font.
+				Usage: Add -preview or -p to command line.
+	Bug fix: When reading file with BOM, the BOM is read as a character.
+1.0.1
+	Improvement: More information is output during process
+1.0.0
+	New feature: Display which characters are not included in the subset
+0.9.0
+	Initial release

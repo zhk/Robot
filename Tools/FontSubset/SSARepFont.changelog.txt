@@ -1,0 +1,10 @@
+1.0.4
+	Compatible with SubsetFont 1.1.3
+1.0.3
+	Bug fix: No longer crashes when no font names is specified
+1.0.2
+	Now program will continue processing even if some of the input files are missing
+1.0.1
+	Added more help text
+1.0.0
+	Initial release
